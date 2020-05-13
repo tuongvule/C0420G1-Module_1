@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-4</title>
+</head>
+<body>
+<!--Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 7.-->
+<script>
+    let a= 1;
+    let b=1;
+    let c=2;
+    while (c%7!=0){
+        c=a+b;
+        if(c%7==0){
+            document.write("số đầu tiên trong dãy fibonanci là: "+ c);
+            break;}
+        a=b;
+        b=c;
+
+    }
+</script>
+
+
+</body>
+</html>

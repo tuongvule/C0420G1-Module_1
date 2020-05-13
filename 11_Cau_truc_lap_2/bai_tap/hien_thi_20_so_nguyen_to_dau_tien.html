@@ -6,17 +6,24 @@
 </head>
 <body>
 <script>
-   let N = parseInt(prompt("nhập vào số nguyên");
-   if (N<2)){
-       console.log("ko phai so ng tố");
-   }else if(N=2 || N=3){
-       console.log("la so nguyen to");
-   }else if(N>2)
-       for(i=2;i<(N-1);i++)){
-           if(N%i==0){}
-       }
-   }
 
+    let numbers = parseInt(prompt("nhap vao so luong so nguyen to can in ra"));
+    let N = 2;
+    let count=0;
+    let i;
+    let text = "";
+    while (count<numbers){
+        for(i=2;i<N;i++){
+            if(N%i==0)
+                break;
+        }
+        if(i==N){
+            text=text + N + " ";
+            count++;
+        }
+        N++;
+    }
+    document.write(numbers + " số nguyên tố đầu tiên cần tìm là: " + text);
 
 
 </script>
