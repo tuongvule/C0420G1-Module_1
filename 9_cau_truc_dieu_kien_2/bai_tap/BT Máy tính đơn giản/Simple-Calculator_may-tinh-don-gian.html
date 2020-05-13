@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple_calculator</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th></th>
+        <th colspan="7"><input type="text" id="t"></th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <th></th>
+        <th><input type="button" id="input1" value="1"/> </th>
+        <th></th>
+        <th><input type="button" id="input2" value="2"/> </th>
+        <th></th>
+        <th><input type="button" id="input3" value="3"/> </th>
+        <th></th>
+        <th><input type="button" id="add" value="+"/></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><input type="button" id="input4" value="4"/> </th>
+        <th></th>
+        <th><input type="button" id="input5" value="5"/> </th>
+        <th></th>
+        <th><input type="button" id="input6" value="6"/> </th>
+        <th></th>
+        <th><input type="button" id="sub" value="-"/></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><input type="button" id="input" value="7"/> </th>
+        <th></th>
+        <th><input type="button" id="input8" value="8"/> </th>
+        <th></th>
+        <th><input type="button" id="input9" value="9"/> </th>
+        <th></th>
+        <th><input type="button" id="plus" value="x"/></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><input type="button" id="delete" value="C"/> </th>
+        <th></th>
+        <th><input type="button" id="input0" value="0"/> </th>
+        <th></th>
+        <th><input type="button" id="equal" value="="/> </th>
+        <th></th>
+        <th><input type="button" id="div" value="/"/></th>
+        <th></th>
+    </tr>
+<script>
+    let i1 = document.getElementById("input1");
+    let i2 = document.getElementById("input2");
+    let i3 = document.getElementById("input3");
+    let i4 = document.getElementById("input4");
+    let i5 = document.getElementById("input5");
+    let i6 = document.getElementById("input6");
+    let i7 = document.getElementById("input7");
+    let i8 = document.getElementById("input8");
+    let i9 = document.getElementById("input9");
+    let i0 = document.getElementById("input0");
+    let add = document.getElementById("add");
+    let sub = document.getElementById("sub");
+    let plus = document.getElementById("plus");
+    let div = document.getElementById("div");
+    let c = document.getElementById("delete");
+    let e = document.getElementById("equal");
+    let t = document.getElementById("t");
+    t.value="";
+    i1.onclick=function () {
+        t.value+="1";
+    }
+    i2.onclick=function () {
+        t.value+="2";
+    }
+
+</script>
+</table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dang_Ki_hoc_vien</title>
+</head>
+<body>
+<form action="/action_page.php">
+    <p>ĐĂNG KÝ HỌC VIÊN</p>
+    Họ Và Tên:
+    <input name="yourname" type="text"/> <br/><br/>
+    Ngày Sinh:
+    <input name="birthday" type="text"/><br/><br/>
+    Giới tính:
+    <label> <input name="sex" type="radio" value="male" checked/> Nam</label>
+    <label><input name="sex" type="radio" value="female"/>Nữ</label><br/><br/>
+    Địa chỉ:<br/>
+    <textarea name="address" cols="50" rows="4"></textarea><br/>
+    Lớp:
+    <select name="class">
+        <option selected value="class 1A">1A</option>
+        <option value="class 2A">2A</option>
+        <option value="class 3A">3A</option>
+        <option value="class 4A">4A</option>
+        <option value="class 5A">5A</option>
+    </select><br/><br/>
+    Email:
+    <input name="email" type="text" size="30"/><br/><br/>
+    Điện thoại:
+    <input name="phone" type="number" size="30" /><br/><br/>
+    <input name="submit" type="submit" value="Đăng kí"/>
+    <input name="reset" type="reset" value="Nhập lại"/>
+
+</form>
+</body>
+</html>

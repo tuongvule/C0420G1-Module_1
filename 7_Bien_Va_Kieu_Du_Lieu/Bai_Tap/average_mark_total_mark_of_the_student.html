@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diem_trung_binh_diem_tong</title>
+</head>
+<body>
+<script>
+    let inputPhysMark = prompt("Please input your physical mark");
+    let inputChemMark = prompt("Please input your chemistry mark");
+    let inputBioMark = prompt("Please input your biology mark");
+    let physMark = parseFloat(inputPhysMark);
+    let chemMark = parseFloat(inputChemMark);
+    let bioMark = parseFloat(inputBioMark);
+    let averageMark = (physMark + chemMark + bioMark)/3;
+    let totalMark = physMark + chemMark + bioMark;
+    document.write("Your average mark is "+ averageMark);
+    document.write("<br/>");
+    document.write("Your total mark is " + totalMark);
+</script>
+</body>
+</html>

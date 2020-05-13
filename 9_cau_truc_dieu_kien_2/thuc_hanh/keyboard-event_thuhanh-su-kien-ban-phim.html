@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keyboard-event_thuchanh-su-kien-ban-phim</title>
+</head>
+<body onload="docReady()">
+
+    <img id="nobita" src="nobita.jpg" style="position:absolute;left:0;top:0"height="100" width="80" /> //aldjflajdf
+
+
+<script>
+ function upArrowPressed() {                             //Bước 2: Xây dựng các hàm xử lý khi nhấn phím lên
+    let element = document.getElementById("nobita");
+    element.style.top = parseInt(element.style.top) + 5 +'px';
+}
+function downArrowPressed() {                           //Bước 3: Xây dựng các hàm xử lý khi nhấn phím xuống
+    let element = document.getElementById("nobita");
+    element.style.top = parseInt(element.style.top) - 5 + "px";
+}
+function rightArrowPressed() {                          //Bước 4: Xây dựng các hàm xử lý khi nhấn phím sang phải
+    let element = document.getElementById("nobita");
+    element.style.left = parseInt(element.style.left) + 5 + "px";
+}
+function leftArrowPressed() {                           //Bước 5: Xây dựng các hàm xử lý khi nhấn phím sang trái
+    let element = document.getElementById("nobita");
+    element.style.left = parseInt(element.style.left) - 5 + "px";
+}
+function moveSelection(evt) {                              //Bước 6: Xây dựng các hàm nhận các phím
+    switch (evt.keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+        case 38:
+            upArrowPressed();
+            break;
+        case 40:
+            downArrowPressed();
+            break;
+    }
+}
+function docReady() {                                            //Bước 7: Xây dựng hàm doReady()
+        window.addEventListener("keydown", moveSelection);
+}
+
+
+
+</script>
+</html>

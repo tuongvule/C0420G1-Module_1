@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculate_table</title>
+</head>
+<body>
+<input name="nhap1" type="text" id="input1"/>
+<input name="nhap2" type="text" id="input2"/>
+<br/>
+<input type="submit" value="Addition(+)" id="add"/>
+<input type="submit" value="Substraction(-)" id="sub"/>
+<input type="submit" value="Multiplication(X)" id="mul"/>
+<input type="submit" value="Division(/)" id="div"/>
+<div id="result"></div>
+<script>
+    document.getElementById("input1");
+    var input1 = document.getElementById("input1");
+    var input2 = document.getElementById("input2");
+    var add = document.getElementById("add");
+    var sub = document.getElementById("sub");
+    var mul = document.getElementById("mul");
+    var div = document.getElementById("div");
+    var result = document.getElementById("result");
+
+    add.addEventListener("click",add2numbers);
+    sub.addEventListener("click",sub2numbers);
+    mul.addEventListener("click",mul2numbers);
+    div.addEventListener("click",div2numbers);
+
+    function add2numbers() {
+result.innerHTML = parseInt(input1.value) + parseInt(input2.value);
+    }
+    function sub2numbers() {
+        result.innerHTML = parseInt(input1.value) - parseInt(input2.value);
+    }
+    function mul2numbers() {
+        result.innerHTML = parseInt(input1.value) * parseInt(input2.value);
+    }
+    function div2numbers() {
+        result.innerHTML = parseInt(input1.value) / parseInt(input2.value);
+    }
+
+</script>
+
+</body>
+</html>

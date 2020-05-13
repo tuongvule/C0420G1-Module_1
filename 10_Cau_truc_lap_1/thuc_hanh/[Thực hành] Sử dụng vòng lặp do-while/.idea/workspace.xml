@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9ffd011b-85f8-4d8d-ad1f-d84b8fb8a394" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/do-while_sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Thực hành] Sử dụng vòng lặp for/bai-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Thực hành] Sử dụng vòng lặp for/show_The-number-is-N.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Thực hành] Sử dụng vòng lặp while/bai-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Thực hành] Sử dụng vòng lặp while/bai-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/game-puzzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Luyện tập cấu trúc điều kiện 01/bai-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Luyện tập cấu trúc điều kiện 01/bai-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Luyện tập cấu trúc điều kiện 01/bai-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Luyện tập cấu trúc điều kiện 01/bai-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Luyện tập cấu trúc điều kiện 01/bai-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Máy tính đơn giản/Simple-Calculator_may-tinh-don-gian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Máy tính đơn giản/may-tinh-don-gian_phien-ban-don-gian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4_GIT &amp; HTML/Bai_tap/GitProject/GitProject" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4_GIT &amp; HTML/Bai_tap/GitProject/GitProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/thuc_hanh/keyboard-event_thuhanh-su-kien-ban-phim.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/thuc_hanh/keyboard-event_thuhanh-su-kien-ban-phim.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1bnQuZqemwdIYLmcrpewPeswaEp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[Thực hành] Sử dụng vòng lặp lồng nhau" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ffd011b-85f8-4d8d-ad1f-d84b8fb8a394" name="Default Changelist" comment="" />
+      <created>1589265600964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589265600964</updated>
+      <workItem from="1589265602123" duration="824000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="980" y="189" key="FileChooserDialogImpl" timestamp="1589266425101">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="980" y="189" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1589266425101" />
+  </component>
+</project>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>currency_converter_aplication</title>
+</head>
+<body>
+<form>
+
+   <label for="money"><strong>Amount</strong></label>
+    <input type="text" id="money"/><br/>
+
+    <label for="fromCurrency"><strong>From Currency</strong></label>
+    <select name="fromcurrency" id="fromCurrency">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+
+    <label for="toCurrency"><strong>To Currency</strong></label>
+    <select name="tocurrency" id="toCurrency">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+
+    <input type="button" value="Convert" onclick="changeMoney()"/>
+    <div id="q"></div>
+
+</form>
+</body>
+<script>
+ function changeMoney() {
+   let money = document.getElementById("money").value;
+   let fromCurrency = document.getElementById("fromCurrency").value;
+   let toCurrency = document.getElementById("toCurrency").value;
+   money = parseInt(money);
+   let result = 0 ;
+   if (fromCurrency == "USD" && toCurrency == "VND"){
+       result = money*23000;
+   }
+   else if(fromCurrency== "VND" && toCurrency== "USD"){
+        result = money/23000;
+   }
+   else {
+       result = "Please input again kind of money you want to convert!";
+   }
+          document.getElementById("q").innerHTML = result;
+
+    }
+</script>
+</html>
