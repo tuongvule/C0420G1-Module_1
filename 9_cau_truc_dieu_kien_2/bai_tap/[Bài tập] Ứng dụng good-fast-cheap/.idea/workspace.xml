@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="397e668a-0d82-4bf7-9e53-a0c61361c9db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BT Ứng dụng vui DoYouLoveMe/DoYouLoveMe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoodFastCheap_TuongVuLe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11_Cau_truc_lap_2/bai_tap/[Bài tập] Luyện tập vòng lặp 01/Bài 6 Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11_Cau_truc_lap_2/bai_tap/[Bài tập] Luyện tập vòng lặp 01/Bài 6 Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT GoodFastCheap/GoodFastCheap.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT GoodFastCheap/GoodFastCheap/GoodFastCheap.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1brmAOXLNeRk50bvSX9Hzqz8xGP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../11_Cau_truc_lap_2/bai_tap/[Bài tập] Luyện tập vòng lặp 01/Bài 7 Hãy viết một chương trình in ra các số từ 1 đến 100" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="397e668a-0d82-4bf7-9e53-a0c61361c9db" name="Default Changelist" comment="" />
+      <created>1589398442925</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589398442925</updated>
+      <workItem from="1589398444039" duration="1920000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="980" y="189" key="FileChooserDialogImpl" timestamp="1589400361841">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="980" y="189" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1589400361841" />
+  </component>
+</project>

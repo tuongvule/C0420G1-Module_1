@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate the factorial of a positive integer</title>
+</head>
+<body>
+<script>
+    let factorial=1;
+    let N = parseInt(prompt("Input a positive integer below:"));
+    if(N==1){
+        factorial =0;
+    }
+    else if(N>1) {
+        for (i = 2; i <= N; i++) {
+            factorial *= i;
+        }
+    }
+
+        document.write(N + "! = " +factorial)
+
+</script>
+</body>
+</html>

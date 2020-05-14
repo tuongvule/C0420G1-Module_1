@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73c75113-7c78-464f-b1af-65db8632fc57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Bài 1 Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành/bai-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bài 2 Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại/bai-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bài 3 Hiển thị ra 20 số trong dãy fibonacci đầu tiên/bai-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bài 4 Tìm số đầu tiên trong dãy fibonacci chia hết cho 5/bai-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bài 5 Tính tổng của 20 số đầu tiên trong dãy fibonacci/bai-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bài 7 Hãy viết một chương trình in ra các số từ 1 đến 100/bai-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hien_thi_20_so_nguyen_to_dau_tien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../hien_thi_20_so_nguyen_to_dau_tien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bài 7 Hãy viết một chương trình in ra các số từ 1 đến 100" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../9_cau_truc_dieu_kien_2/bai_tap/BT Ứng dụng vui DoYouLoveMe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -54,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589361215198</updated>
-      <workItem from="1589361216409" duration="3849000" />
+      <workItem from="1589361216409" duration="3866000" />
     </task>
     <servers />
   </component>
@@ -62,9 +55,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="579" y="172" key="FileChooserDialogImpl" timestamp="1589365012994">
+    <state x="579" y="172" key="FileChooserDialogImpl" timestamp="1589396776863">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="579" y="172" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1589365012994" />
+    <state x="579" y="172" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1589396776863" />
   </component>
 </project>

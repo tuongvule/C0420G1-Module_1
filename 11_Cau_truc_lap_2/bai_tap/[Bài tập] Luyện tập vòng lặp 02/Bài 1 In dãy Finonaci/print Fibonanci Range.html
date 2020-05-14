@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print Fibonancy Sequence</title>
+</head>
+<body>
+<script>
+    let numbers = parseInt(prompt("input the number of First Fibonacci Number You want"));
+    let a=1;
+    let b=1;
+    let c=2;
+    text = "1_1 ";
+    for (i=3;i<=numbers;i++){
+        c=a+b;
+        text +=  "_"+c ;
+        a=b;
+        b=c;
+    }
+    document.write(text);
+</script>
+</body>
+</html>
