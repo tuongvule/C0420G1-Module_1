@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max in array_ total</title>
+</head>
+<body>
+<!--Bài 3- Viết chương trình khởi tạo mảng số nguyên. -->
+<!--Hiển hiện giá trị lớn nhất trong mảng đó.-->
+<!--In ra giá trị trung bình của các phần tử trong mảng.-->
+<script>
+    let arr = [91, 12, 43, 25, 24, 89, 23, 98, 42];
+    let total = 0;
+    let max = arr[0];
+    for(let i=0;i<arr.length; i++){
+        total += arr[i];
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    document.write("Total: " + total + "; the max number is:" + max);
+</script>
+</body>
+</html>

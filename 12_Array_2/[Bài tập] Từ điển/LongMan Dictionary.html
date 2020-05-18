@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Longman Dictionary</title>
+</head>
+<body>
+
+    <input type="text" id="input">
+    <button type="button" id="search" onclick="translate1()" value="SEARCH">dịch</button>
+    Từ bạn cần tìm là <p id="result"></p>
+
+<script>
+    let english = ["English","practice","wind","love","ngu"];
+    let vietnamese = ["Tiếng anh","thực hành","gió","yêu","đần"];
+    let input = document.getElementById("input");
+    let result=document.getElementById("result");
+    function translate1() {
+
+
+        for(let i=0;i<english.length;i++)
+        {
+            if(input.value===english[i])
+            {
+             result.innerHTML=vietnamese[i];
+             break;
+            }
+            else if (i === english.length -1)
+            result.innerHTML="the word  ";
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>insert_dashes (-) between even numbers</title>
+</head>
+<body>
+<!--Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn.
+ Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.-->
+
+<!--Có thể xem hướng dẫn tại:-->
+
+<!--https://www.w3resource.com/javascript-exercises/javascript-array-exercise-6.php-->
+<script>
+    let num = (prompt("nhap mot mang"));
+    let result =[];
+    for(i=0;i<num.length;i++){
+        if(num[i]%2===0 && num[i+1]%2===0){
+            result.push(num[i],"-")
+        }else {
+            result.push(num[i]);
+        }
+    }
+    document.write((result.join("")));
+    // const num = window.prompt();
+    // const str = num.toString();
+    // const result = [str[0]];
+    //
+    // for(let x=1; x<str.length; x++)
+    // {
+    //     if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+    //     {
+    //         result.push('-', str[x]);
+    //     }
+    //     else
+    //     {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // document.write(result.join(''));
+
+</script>
+</body>
+</html>

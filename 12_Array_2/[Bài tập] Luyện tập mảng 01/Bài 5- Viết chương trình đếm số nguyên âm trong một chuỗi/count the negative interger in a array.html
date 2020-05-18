@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>count the negative interger in a array</title>
+</head>
+<body>
+<!--Bài 5- Viết chương trình đếm chữ số nguyên âm trong một chuỗi-->
+<script>
+// let arr = ["a","b","w","e","b","j","k","i","c","i","c","e","i","u","m"];
+// let count= 0;
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]==="u"||arr[i]==="e"||arr[i]==="o"||arr[i]==="a"||arr[i]==="i"){
+//         count++;
+//     }
+// }
+// document.write("the number of negative integers in the array above is: " + count);
+let x = prompt();
+let arr = x.split("",x.length);
+let voelDigits = ["u","e", "o", "a", "i"];
+let count= 0;
+for(let i=0; i<arr.length; i++){
+    for(let j=0;j<voelDigits.length;j++){
+        if(arr[i]===voelDigits[j]){
+            count++;
+            break;
+        }
+    }
+}
+document.write("the number of vowel digits in the string above is: " + count);
+</script>
+</body>
+</html>

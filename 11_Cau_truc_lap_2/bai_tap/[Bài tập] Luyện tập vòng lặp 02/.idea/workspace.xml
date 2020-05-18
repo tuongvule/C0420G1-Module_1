@@ -2,17 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa064df-9c68-4dc7-ac0a-ada655fa8e16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bài 1 In dãy Finonaci/print Fibonanci Range.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài 2 Tính giai thừa của một số nguyên dương/Calculate the factorial of a positive integer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài 3 In tam giác vuông/Print right triangle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Ứng dụng vui DoYouLoveMe/DoYouLoveMe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/[Bài tập] Ứng dụng good-fast-cheap/GoodFastCheap_TuongVuLe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../10_Cau_truc_lap_1/thuc_hanh/[Thực hành] Sử dụng vòng lặp lồng nhau/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10_Cau_truc_lap_1/thuc_hanh/[Thực hành] Sử dụng vòng lặp lồng nhau/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../10_Cau_truc_lap_1/thuc_hanh/[Thực hành] Sử dụng vòng lặp lồng nhau/su-dung-vong-lap-long-nhau.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập vòng lặp 01/Bài 6 Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập vòng lặp 01/Bài 6 Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập vòng lặp 01/Bài 7 Hãy viết một chương trình in ra các số từ 1 đến 100/bai-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập vòng lặp 01/Bài 7 Hãy viết một chương trình in ra các số từ 1 đến 100/bai-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT GoodFastCheap/GoodFastCheap.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT GoodFastCheap/GoodFastCheap/GoodFastCheap.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 4 In hình chữ nhật/print_rectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài 5 Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con)/bank loan calculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/GamePuzzle_TuongVuLe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bài 3 In tam giác vuông/Print right triangle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bài 3 In tam giác vuông/Print right triangle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/game-puzzle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/cat5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/mokey1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/moknkey5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/monkey2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/monkey2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/monkey3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/monkey3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/monkey4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/monkey4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9_cau_truc_dieu_kien_2/bai_tap/BT Game puzzle/images/panda5.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +50,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../12_Array_1/practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../12_Array_2" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589402306928</updated>
       <workItem from="1589402308238" duration="7163000" />
+      <workItem from="1589497298995" duration="809000" />
     </task>
     <servers />
   </component>
@@ -60,9 +71,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1589431928676">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1589505682268">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1589431928676" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1589505682268" />
   </component>
 </project>

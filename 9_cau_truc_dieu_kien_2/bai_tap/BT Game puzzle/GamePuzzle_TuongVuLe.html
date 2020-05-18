@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GamePuzzle_TuongVuLe</title>
+</head>
+<body>
+<img id="img0" onclick="changeImg('0')" src="images/cat0.jpg"><br>
+<img id="img1" onclick="changeImg('1')" src="images/cat1.jpg"><br>
+<img id="img2" onclick="changeImg('2')" src="images/cat2.jpg"><br>
+<img id="img3" onclick="changeImg('3')" src="images/cat3.jpg"><br>
+<img id="img4" onclick="changeImg('4')" src="images/cat4.jpg"><br>
+
+<script>
+    function changeImg(indexImg) {
+        let img0 = document.getElementById("img0");
+        let img1 = document.getElementById("img1");
+        let img2 = document.getElementById("img2");
+        let img3 = document.getElementById("img3");
+        let img4 = document.getElementById("img4");
+
+        switch (indexImg) {
+            case "0":
+                if(img0.getAttribute("src")==="images/cat0.jpg") {
+                    img0.src = "images/mokey0.jpg"
+                }else if (img0.getAttribute("src")==="images/mokey0.jpg"){
+                    img0.src = "images/panda0.jpg"
+                }else{
+                    img0.src = "images/cat0.jpg"
+                }
+                break;
+            case "1":
+                if(img1.getAttribute("src")==="images/cat1.jpg") {
+                    img1.src = "images/mokey1.jpg"
+                }else if (img1.getAttribute("src")==="images/mokey1.jpg"){
+                    img1.src = "images/panda1.jpg"
+                }else{
+                    img1.src = "images/cat1.jpg"
+                }
+                break;
+            case "2":
+                if(img2.getAttribute("src")==="images/cat2.jpg") {
+                    img2.src = "images/mokey2.jpg"
+                }else if (img2.getAttribute("src")==="images/mokey2.jpg"){
+                    img2.src = "images/panda2.jpg"
+                }else{
+                    img2.src = "images/cat2.jpg"
+                }
+                break;
+            case "3":
+                if(img3.getAttribute("src")==="images/cat3.jpg") {
+                    img3.src = "images/mokey3.jpg"
+                }else if (img3.getAttribute("src")==="images/mokey3.jpg"){
+                    img3.src = "images/panda3.jpg"
+                }else{
+                    img3.src = "images/cat3.jpg"
+                }
+                break;
+            case "4":
+                if(img4.getAttribute("src")==="images/cat4.jpg") {
+                    img4.src = "images/mokey4.jpg"
+                }else if (img4.getAttribute("src")==="images/mokey4.jpg"){
+                    img4.src = "images/panda4.jpg"
+                }else{
+                    img4.src = "images/cat4.jpg"
+                }
+                break;
+        }
+
+    }
+</script>
+</body>
+</html>

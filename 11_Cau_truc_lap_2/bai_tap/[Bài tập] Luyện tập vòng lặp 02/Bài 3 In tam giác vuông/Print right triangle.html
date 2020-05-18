@@ -7,26 +7,46 @@
 <body>
 <!--Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau-->
 <script>
-    // for(i=1;i<=5;i++){
-    //     for (j=1;j<=i;j++){
-    //         document.write("*");
-    //      }
-    //     document.write("<br>");
-    // }
-    // for(m=5;m>=1;m--){
-    //     for(n=1;n<=m;n++){
-    //         document.write("*");
-    //     }
-    //     document.write("<br>");
-    // }
-    // for(a=1;a<=5;a++){
-    //     for(b=1;b>=a;b++){
-    //         document.write("*");
-    //     }
-    //     document.write("<br>");
-    // }
-    let arr = ["Toyota", "Subaru", "BMW"]
-    arr.sort();
+    for(let i=1;i<=8;i++){
+        for (let j=1;j<=i;j++){
+            document.write("*");
+         }
+        document.write("<br>");
+    }
+
+    document.write("<hr>");
+
+    for(let m=8;m>=1;m--){
+        for(let n=1;n<=m;n++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<hr>");
+
+    for(let i=1;i<=8;i++){
+        for(let j=8;j>i;j--){
+            document.write("&nbsp;&nbsp;");
+        }
+        for (j=1;j<=i;j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<hr>");
+
+    for(let i=8;i>=1;i--){
+        for(j=8;j>i;j--){
+            document.write("&ensp;");
+        }
+        for(j=1;j<=i;j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
 </script>
 </body>
 </html>

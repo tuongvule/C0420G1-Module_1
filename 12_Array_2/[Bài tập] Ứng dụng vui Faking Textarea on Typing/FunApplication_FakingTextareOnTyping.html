@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FunApplicaiton_FakingTextareaOnTyping</title>
+</head>
+<body>
+<textarea id="text" onkeypress="fakeText()" cols="30" rows="15"></textarea>
+<script>
+    let str = new Array();
+    str = "Tôi là một thằng ngu nhé. ";
+    let chuoi="";
+    let i=0;
+    function fakeText() {
+    chuoi += str[i];
+    document.getElementById("text").value = chuoi;
+    i++;
+    if(i==str.length){
+        i=0;
+        chuoi="";
+    }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+<!--Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.-->
+<!--Ví dụ, nếu một mảng chứa các ký tự  {'c', 's', 'c', '2', '6', '1'} sau khi-->
+<!--thực hiện đảo ngược sẽ là "162csc"-->
+<h3 id="result"></h3>
+<script>
+let arr= new Array();
+let num = prompt("Input the number of characters in the array you want to reverse below: ");
+let result = document.getElementById("result");
+for(let i=0;i<num;i++){
+    arr[i] = prompt("Character: " + i);
+}
+let str = "The original array: " + arr.join(", ") + "<br>";
+arr.reverse();
+str += "The array after reversing: " + arr.join(", ") + "<br>";
+result.innerHTML = str;
+</script>
+</body>
+</html>
