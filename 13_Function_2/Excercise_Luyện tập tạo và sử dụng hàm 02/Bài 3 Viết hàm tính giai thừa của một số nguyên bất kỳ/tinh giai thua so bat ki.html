@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh giai thua so nguyen khong am</title>
+</head>
+<body>
+<script>
+    function factorialOfNumber(number) {
+        let result =1;
+        if (number==0){
+            result = 1;
+        }else if(number > 0){
+            for(let i=1;i<= number;i++){
+                result *= i;
+            }
+        }
+        return result;
+    }
+    let input = parseInt(prompt("Input a non negative integer: "));
+    let factorial = factorialOfNumber(input);
+    document.write("Factorial of the number you inputed is: "+ factorial);
+</script>
+</body>
+</html>

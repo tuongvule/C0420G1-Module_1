@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ham tinh dien tich, chu  vi hinh tron</title>
+</head>
+<body>
+<script>
+        function calculateCircle(radius) {
+                const pI = 3.14158;
+                circleCircumference = 2*pI*radius;
+                circleArea = pI*radius*radius;
+                return circleArea;
+                return circleCircumference;
+        }
+        let input = parseInt(prompt("Input the radius of the circle: "));
+        calculateCircle(input);
+        document.write("Circumference and area of the circle: " + circleCircumference
+            + " unit of length & "+circleArea +" unit of area");
+</script>
+</body>
+</html>
