@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra ki tu co trong mang khong</title>
+</head>
+<body>
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,-->
+<!--kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.-->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+<script>
+    let str = prompt("nhap vao mang kí tự");
+    let char = prompt("nhap vao kí tự cần kiểm tra");
+    function checkCharacterInArray(str,char) {
+        let arr = str.split(',');
+        let count = 0;
+        for(let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            if (char === arr[i]) {
+                count++;
+            }
+
+        }
+        return count;
+    }
+        alert(checkCharacterInArray(str, char));
+
+
+</script>
+</body>
+</html>

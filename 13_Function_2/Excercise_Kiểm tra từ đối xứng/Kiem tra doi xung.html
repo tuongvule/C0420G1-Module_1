@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra doi xung</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập chuỗi");
+    function isPalindrome(str1) {
+        let str2 = str1;
+        let arr = str1.split('');
+        arr.reverse();
+        str1 = arr.join('');
+        if(str2==str1){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    if (isPalindrome(str)==true){alert("đây là chuỗi đối xứng");}
+    else {alert("đây không phải chuỗi đối xứng");}
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6 - kiem tra so nguyen duong</title>
+</head>
+<body>
+<!--Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là-->
+<!--nguyên dương không.-->
+<!--Nếu là nguyên dương trả về true, ngược lại trả về false.-->
+<script>
+
+    function checkPositiveInteger(number) {
+
+        if (Number.isInteger(number) && number > 0) {
+            alert("là số nguyên dương");
+        } else {
+            alert("không phải là số nguyên dương")
+        }
+    }
+
+    let input = prompt("Input any positive integer")*1;
+    checkPositiveInteger(input);
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(status, pin) {
+            this.status = status;
+            this.pin = pin;
+            this.soanThao=[];
+            this.thuDen = [];
+            this.daGui = [];
+        }
+        isONOfOff(){
+            if(this.status){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        onOrOffMobile(){
+            if(status){
+                this.status=false;
+            }else {
+                this.status = true;
+            }
+        }
+        sacPin(){
+            while (this.pin<100){
+                this.pin += 0.00001;
+            }
+        }
+        soanTinNhan(){
+            if(this.isONOfOff()){
+                let temp = prompt("Nội dung tin nhắn bạn muốn soạn thảo");
+                this.soanThao.push(temp);
+            } else {
+                alert("Điện thoại đang tắt");
+            }
+            this.pin--;
+
+        }
+         nhanTinNhan(mobile){
+            alert("Bạn có một tin nhắn mới");
+         }
+         guiTinNhan(mobile){
+            if(this.isONOfOff()){
+                let temp="";
+                for(let i=0; i<this.soanThao.length;i++){
+                    temp+= (i+1) + "." + this.soanThao[i]+"\n";
+            }
+                let index = prompt("Mời bạn nhập thư muốn gửi:  \n  " + temp);
+                mobile.thuDen.push(this.sdt+"."+this.soanThao[index-1]);
+                this.daGui.push(this.soanThao[index-1]);
+                this.soanThao.splice(index-1,1);
+                mobile.nhanTinNhan();
+            }else {
+                alert("Điện thoại đang tắt");
+            }
+            this.pin--;
+
+         }
+         xemTinNhan(){
+            if(this.isONOfOff()){
+                let temp = "";
+                for(let i=0; i<this.thuDen.length;i++){
+                temp += (i+1)+"."+this.thuDen[i] + "\n";
+            }
+            alert(temp);
+         }else {
+            alert("Điện thoại đang tắt");
+            }
+             this.pin--;
+         }
+    }
+    let iphone=new Mobile (true, 100);
+    let samsung = new Mobile(true, 100);
+    iphone.soanTinNhan();
+    iphone.soanTinNhan();
+    iphone.soanTinNhan();
+    iphone.guiTinNhan(samsung);
+    samsung.xemTinNhan();
+
+</script>
+
+</body>
+</html>

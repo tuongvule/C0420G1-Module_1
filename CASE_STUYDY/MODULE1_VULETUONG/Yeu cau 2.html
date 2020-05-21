@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yeu-cau-2</title>
+</head>
+<body>
+<script>
+    let name = "";
+    let idNumber="";
+    let birthday="";
+    let email="";
+    let address="";
+    let typeService="";
+    let typeRoom="";
+    let typeCustomer="";
+    let discount="";
+    let quantityIncluded="";
+    let rentDays="";
+    let moneyService="";
+    let totalPay="";
+
+    // input thông tin
+    function inputInformation() {
+        name = prompt("Please input Full Name:");
+        idNumber = prompt("Please input ID Number:");
+        birthday = prompt("Please input birthday:");
+        email = prompt("Please input Email:");
+        address = prompt("Please input Address:");
+        typeService= prompt("Please input Type of Service (Villa, House, Room:");
+        typeRoom = prompt("Please input type of room (Vip, Business, Normal");
+        typeCustomer=prompt("Please input Type of Customer (Diamond, Platinum, Gold, Silver, Member:");
+        discount = prompt("Please input Discount:");
+        quantityIncluded = prompt("Please input included quantity:");
+        rentDays = prompt("Please input the number of days rented:" );
+        moneyService =
+            typeService ==="Villa"
+                ? 500
+                :typeService==="House"
+                    ? 300
+                    :typeService==="Room"
+                        ? 100
+                        : 0;
+    }
+
+    // Discount by address
+    let sumDiscount=0;
+    if(address==="Đà Nẵng"){
+        sumDiscount+=20;
+    }else if(address==="Huế"){
+        sumDiscount+=10;
+    }else if(address==="Quảng Nam"){
+        sumDiscount+=5;
+    }
+
+    // Discount by number of days rented
+    if(parseInt(rentDays)>=7){
+        sumDiscount+=30;
+    }else if (parseInt(rentDays)<7 && parseInt(rentDays)>=5){
+        sumDiscount+=20;
+    }else if (parseInt(rentDays)<5 && parseInt(rentDays)>=2) {
+        sumDiscount += 10;
+    }
+
+    // Discount by Type of Service
+    if(typeCustomer==="Diamond"){
+        sumDiscount+=15;
+    }else if(typeCustomer==="Platinum"){
+        sumDiscount+=10;
+    }else if(typeCustomer==="Gold"){
+        sumDiscount+=5;
+    }else if(typeCustomer==="Silver"){
+        sumDiscount+=2;
+    }
+    // Discount by Age
+    let current = new Date().getFullYear();
+    birthday = new Date(birthday).getFullYear();
+    let age = current - birthday;
+    if(age>=30){
+        sumDiscount+=2;
+    }else if(age<30 && age>=20){
+        sumDiscount+=1;
+    }
+    totalPay = (
+        parseInt(moneyService)*parseInt(rentDays)*(1-discount/100))-sumDiscount;
+    console.log(age);
+    takeChoice();
+
+    // Show information
+    function showInfo() {
+        document.write("Full Name: "+name);
+        document.write("<br>");
+        document.write("ID Number: "+ idNumber);
+        document.write("<br>");
+        document.write("Birthday: " +birthday);
+        document.write("<br>");
+        document.write("Email: "+email);
+        document.write("<br>");
+        document.write("Address: " +address);
+        document.write("<br>");
+        document.write("Type of Service: "+typeService);
+        document.write("<br>");
+        document.write("Type of Room: "+typeRoom);
+        document.write("<br>");
+        document.write("Type of Customer: "+typeCustomer);
+        document.write("<br>");
+        document.write("Discount: "+discount);
+        document.write("<br>");
+        document.write("Inclued Quantity: "+quantityIncluded);
+        document.write("<br>");
+        document.write("The number of days rented: "+rentDays);
+        document.write("<br>");
+        document.write("Payment Amount: "+totalPay);
+        document.write("<>><><><><><><><><><><>");
+
+    }
+    function takeChoice() {
+        let choice = prompt(
+            "0. Input New Customer \n 1. Show Customer Information \n 2. Edit Customer Information \n 3. Show the amount to be paid after discount", "1"
+        );
+        if(choice=="0"){
+            inputInformation();
+        }else if(choice=="1"){
+            showInfo();
+        }else if(choice=="2"){
+            inputInformation();
+            showInfo();
+        }else if (choice=="3"){
+            alert("Amout the customer need to pay is: "+ totalPay);
+            takeChoice();
+        }
+
+    }
+    takeChoice();
+</script>
+</body>
+</html>

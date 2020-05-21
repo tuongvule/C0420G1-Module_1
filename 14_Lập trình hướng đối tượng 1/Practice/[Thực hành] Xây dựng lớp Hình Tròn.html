@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+<!--Bước 1: Tạo lớp Circle với phương thức khởi tạo có 1 tham số truyền vào-->
+<script>
+    class Circle {
+        constructor(radius) {
+            this.radius = radius;
+        }
+
+        getRadius() {                          //Bước 2: Xây dựng phương thức trả về bán kính của hình tròn
+        return this.radius;
+        }
+
+        getArea() {                            //Bước 3: Xây dựng phương thức tính diện tích hình tròn
+        return Math.PI * this.radius *this.radius;
+         }
+}
+    let circle = new Circle(2);                                 // Bước 4: Sử dụng lớp vừa tạo. Tạo đối tượng hình tròn với bán kính là 2
+
+    let radius = circle.getRadius();                          //Bước 5: Truy cập phương thức của lớp hình tròn vừa tạo và gán cho các biến radius, area
+    let area = circle.getArea();
+
+    alert("radius:"+ radius + ";area:" + area.toFixed(3));                             //Bước 6: Hiển thị bán kính và diện tích
+
+</script>
+</body>
+</html>

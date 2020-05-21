@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6 - tim gia tri nho nhat</title>
+</head>
+<body>
+<!--Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+<script>
+    function findMinNumber(number1, number2, number3) {
+        let min = number1;
+        if (number2 < min){min = number2;}
+        if(number3 < min){min = number3;}
+
+        return min;
+    }
+    let input1 = parseInt(prompt("Input number1:"));
+    let input2 = parseInt(prompt("Input number2"));
+    let input3 = parseInt(prompt("Input number3"));
+    document.write("the min number is: " +  findMinNumber(input1, input2, input3));
+</script>
+</body>
+</html>
