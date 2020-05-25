@@ -5,6 +5,52 @@
     <title>Yeu cau 4</title>
 </head>
 <body>
+<script>
 
+    let arrNameCustomers = [];
+    while (true) {
+        let choose = parseInt(prompt("1. Add New Customer" + "\n" + "2. Delete Customer"));
+        switch (choose) {
+            case 1: {
+                let number = parseInt(prompt("Input the number of customers you want add to list: "));
+                for (let i = 0; i < number; i++) {
+                    let nameCustomer = prompt("Input name of a customer");
+                    arrNameCustomers.push(nameCustomer);
+                }
+                let result = "";
+                arrNameCustomers.sort();
+                for (let i = 0; i < arrNameCustomers.length; i++) {
+                    result += (i + 1) + ". " + arrNameCustomers[i] + "\n";
+                }
+                alert(result);
+                break;
+            }
+            case 2:{
+                let check= false;
+                let nameCustomer = prompt("Input name of customer you want delete: ");
+                for(let i=0; i< arrNameCustomers.length;i++){
+                    if(arrNameCustomers[i] === nameCustomer){
+                        arrNameCustomers.splice(i,1);
+                        check=true;
+                    }
+                }
+                if(!check){
+                    alert("Tên bạn muốn xóa không tồn tại")
+                }
+                let result = "";
+                arrNameCustomers.sort();
+                for (let i = 0; i < arrNameCustomers.length; i++) {
+                    result += (i + 1) + ". " + arrNameCustomers[i] + "\n";
+                }
+                alert(result);
+                break;
+            }
+            default: {
+                alert("Failed");
+            }
+
+        }
+    }
+</script>
 </body>
 </html>

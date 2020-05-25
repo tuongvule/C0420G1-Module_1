@@ -18,19 +18,170 @@
     let quantityIncluded;
     let rentDays;
     let totalPay;
+    let check=false;
 
-    name = prompt("Input Name: " );
-    cmnd = prompt("Input cmnd: ");
-    birthday = prompt("Input birthday: ");
-    email = prompt("Input Email: ");
+    let tempName = "";
+   name = prompt("input name: ");
+   name = name.trim().toLowerCase();
+   for(let i=0; i<name.length; i++){
+       if(name.charAt(i)===" " && name.charAt(i+1)===" "){
+           continue;
+       }
+       if(i===0 || name.charAt(i-1)===" "){
+           tempName += name.charAt(i).toUpperCase();
+           continue;
+       }
+       tempName += name.charAt(i);
+
+   }
+   name = tempName;
+
+
+    do {
+        cmnd = prompt("Input cmnd: ");
+        if(!isNaN(cmnd)){
+            cmnd=Number.parseFloat(cmnd);
+        }
+        if(!Number.isInteger(cmnd)){
+            alert("CMND không đúng định dạng");
+            continue;
+        }
+        if(cmnd<10000000 || cmnd>99999999){
+            alert("CMND không đúng định dạng");
+            continue;
+        }
+        check=true;
+
+    }while (!check)
+    check=false;
+
+    do {
+        birthday = prompt("Input birthday: ");
+
+            if(birthday.charAt(2)==="/" && birthday.charAt(5)==="/"){
+                let day= birthday.substring(0,2);
+                let month = birthday.substring(3,5);
+                let year = birthday.substring(6,10);
+                if(!isNaN(day) &&  !isNaN(month) && !isNaN(year)){
+                    day=Number.parseFloat(day);
+                    month=Number.parseFloat(month);
+                    year=Number.parseFloat(year);
+                    if(Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)){
+                        if(day<32 && month<13 &&year>1950){
+                            check=true;
+                        }
+                    }
+                }
+
+            }
+            if(!check){
+                alert("Ngày sinh không đúng định dạng");
+            }
+
+    }while (!check)
+    check=false;
+
+        do {
+            let countAt=0;
+            let countDoc=0;
+            email = prompt("Input Email: ");
+            for(let i=0;i<email.length;i++){
+                if(email.charAt(i)==="@"){
+                    countAt++;
+                    for(let j=i+1;j<email.length;j++){
+                        if(email.charAt(j)==="."){
+                            countDoc ++;
+                        }
+                    }
+                }
+            }
+            if(countAt !==1 || countDoc<1){
+                alert("Email bạn nhập không đúng, vui lòng nhập lại");
+            }else {
+                check = true;
+            }
+    }
+    while (!check)
+    check=false;
+
+    let tempAddress = "";
     address = prompt("Input Address: ");
+    address = address.trim().toLowerCase();
+    for(i=0;i<address.length;i++){
+        if(address.charAt(i)===" " && address.charAt(i+1)===" "){
+            continue;
+        }
+        if(i===0 || name.charAt(i-1)===" "){
+            tempName += address.charAt(i).toUpperCase();
+            continue;
+        }
+        tempAddress += address.charAt(i);
+    }
+    address = tempAddress;
+
     typeService = prompt("Input typeService: ");
     typeRoom = prompt("Input typeRoom: ");
+
+    let tempTypeCustomer = "";
     typeCustomer = prompt("Input typeCustomer: ");
-    discount = prompt("Input Discount: ");
-    quantityIncluded = prompt("Input quantityIncluded: ");
-    rentDays = prompt("Input rentDays: ");
+    typeCustomer = typeCustomer.trim().toLowerCase();
+    for (i=0;i<typeCustomer.length; i++){
+        if(typeCustomer.charAt(i)===" " && typeCustomer.charAt(i+1)){
+            continue;
+        }
+        if(i===0 || typeCustomer.charAt(i-1)===" "){
+            tempTypeCustomer += typeCustomer.charAt(i).toUpperCase();
+        }
+        tempTypeCustomer += typeCustomer.charAt(i);
+    }
+    typeCustomer = tempTypeCustomer;
+
+
+    do {
+        discount = prompt("Input Discount: ");
+        if(!isNaN(discount)){
+            discount=Number.parseFloat(discount);
+            if(Number.isInteger(discount) && discount>0){
+                check=true;
+            }
+        }
+        if(!check){
+            check=false;
+        }
+    }while (!check)
+    check=false;
+
+    do {
+        quantityIncluded = prompt("Input quantityIncluded: ");
+        if(!isNaN(quantityIncluded)){
+            quantityIncluded =Number.parseFloat(quantityIncluded);
+            if(Number.isInteger(quantityIncluded) && quantityIncluded>0){
+                check=true;
+            }
+        }
+        if(!check){
+            alert("quantityIncluded không phải là số nguyên dương");
+        }
+    }while (!check)
+    check=false;
+
+    do {
+        rentDays = prompt("Input rentDays: ");
+        if(!isNaN(rentDays)){
+            rentDays=Number.parseFloat(rentDays);
+            if(Number.isInteger(rentDays)&& rentDays>0){
+                check=true;
+            }
+        }
+        if(!check){
+            alert(("Rendays không phải số nguyên dương"));
+        }
+
+    }while (!check)
+    check=false;
     totalPay = 300 * rentDays * (1-discount/100);
+
+
 </script>
 </body>
 </html>

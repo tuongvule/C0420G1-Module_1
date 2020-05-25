@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bai-5</title>
+    <title>bai-5-xep hang hoc sinh</title>
 </head>
 <body>
 <!-- /* Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ*/-->
+<script>
+    let diemKiemTra = prompt("nhap diem kiem tra")*1;
+    let diemGiuaKi = prompt("nhap diem giua ki")*1;
+    let diemCuoiKi = prompt("nhap diem cuoi ki")*1;
+    let diemTrungBinh = (diemKiemTra+diemCuoiKi+diemGiuaKi)/3;
+    alert("điểm trung bình là "+diemTrungBinh);
+    if(diemTrungBinh>=9){
+        alert ("Học lực giỏi");
+    }else if(diemTrungBinh>=7){
+        alert("Học lực khá");
+    }else if(diemTrungBinh>=5){
+        alert("Học lực trung bình");
+    }else if(diemTrungBinh>=3){
+        alert("Học lực yếu");
+    }else {
+        alert("Học lực kém");
+    }
+
+</script>
 </body>
 </html>

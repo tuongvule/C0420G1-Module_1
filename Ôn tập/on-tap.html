@@ -1,0 +1,219 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>on-tap</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;<h3 id="result"></h3>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    let num = prompt("Nhap vao so nguyen")*1;&ndash;&gt;-->
+<!--&lt;!&ndash;    let array = new Array();&ndash;&gt;-->
+<!--&lt;!&ndash;    let str = "";&ndash;&gt;-->
+<!--&lt;!&ndash;    let result = document.getElementById("result");&ndash;&gt;-->
+<!--&lt;!&ndash;    for (let i=0;i<num;i++) {&ndash;&gt;-->
+<!--&lt;!&ndash;        array[i] = Math.round(Math.random()*20);&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    str = array.join(",");&ndash;&gt;-->
+<!--&lt;!&ndash;    str += "<br>" + "Mảng đảo ngược là :<br>";&ndash;&gt;-->
+<!--&lt;!&ndash;    array.reverse();&ndash;&gt;-->
+<!--&lt;!&ndash;    str += array.join(",");&ndash;&gt;-->
+<!--&lt;!&ndash;    result.innerHTML = str;&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    tính trung bình cộng các số chia hết cho 3 trong mảng&ndash;&gt;-->
+<!--&lt;!&ndash;    let str=prompt('nhập vào 1 dãy số');&ndash;&gt;-->
+<!--&lt;!&ndash;    let arr=str.split(',');&ndash;&gt;-->
+<!--&lt;!&ndash;    let count=0;&ndash;&gt;-->
+<!--&lt;!&ndash;    let sum=0;&ndash;&gt;-->
+<!--&lt;!&ndash;    for (let i=0;i<arr.length;i++){&ndash;&gt;-->
+<!--&lt;!&ndash;        if (arr[i]%3==0){&ndash;&gt;-->
+<!--&lt;!&ndash;            count++;&ndash;&gt;-->
+<!--&lt;!&ndash;            sum+=arr[i]*1;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    let tbc=sum/count;&ndash;&gt;-->
+<!--&lt;!&ndash;    console.log(tbc);&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+
+
+
+
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    kiểm tra số hoàn hảo&ndash;&gt;-->
+<!--&lt;!&ndash;    let num=prompt('nhập vào 1 số nguyên');&ndash;&gt;-->
+<!--&lt;!&ndash;    let sum =0;&ndash;&gt;-->
+<!--&lt;!&ndash;    for (let i=1;i<num;i++){&ndash;&gt;-->
+<!--&lt;!&ndash;        if (num%i==0){&ndash;&gt;-->
+<!--&lt;!&ndash;            sum+=i;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    if (sum==num){&ndash;&gt;-->
+<!--&lt;!&ndash;        alert(num+' là số hoàn hảo');&ndash;&gt;-->
+<!--&lt;!&ndash;    }else {&ndash;&gt;-->
+<!--&lt;!&ndash;        alert(num+' k phải là số hoàn hảo');&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+
+
+
+
+<script>
+    let day=prompt('nhập ngày')*1;
+    let month=prompt('nhập tháng')*1;
+    let year=prompt('nhập năm')*1;
+    let arr=[day,month,year];
+    function getmonth(month){
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return 31;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return 30;
+            case 2:
+                if(year%4==0){
+                    if(year%100!=0)
+                        return 29;
+                    else {
+                        if(year%400!=0)
+                            return 28
+                        else {
+                            return 29;
+                        }
+                    }
+                }
+                else {
+
+
+                    return 28;
+                }
+
+    }
+
+    }
+    let sum=0;
+    for (i=1;i<month;i++){
+       sum+=getmonth(i);
+    }
+    let total= sum+day;
+    alert(total);
+    alert(arr=arr.join('/'));
+
+</script>
+
+<!--<table border="1" id="table">-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>STT</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Họ và tên</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Ngày sinh</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Địa chỉ</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Lương</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Chức vụ</th>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>1</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Trương Tấn A</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>11-11-1997</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>quảng nam</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>2000</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Abc</th>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>2</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Trương Tấn B</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>11-11-1998</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>đà nẵng</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>2000</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Abc</th>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>2</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Trương Tấn c</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>11-11-1999</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>huế</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>2000</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Abc</th>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--</table>-->
+<!--<button type="button" id="button" >thêm nhân sự</button>-->
+<!--<script>-->
+<!--    let tab=document.getElementById('table');-->
+<!--    class Employee{-->
+<!--        constructor(STT,name,birth,address,salary,position) {-->
+<!--            this.STT=STT;-->
+<!--            this.name=name;-->
+<!--            this.birth=birth;-->
+<!--            this.address=address;-->
+<!--            this.salary=salary;-->
+<!--            this.position=position;-->
+<!--        }-->
+<!--    }-->
+<!--    let employee1= new Employee(1,'Trương Tấn A','11-11-1997','quảng nam',2000,'abc');-->
+<!--    let employee2= new Employee(2,'Trương Tấn B','11-11-1998','đà nẵng',2000,'abc');-->
+<!--    let employee3= new Employee(3,'Trương Tấn C','11-11-1999','huế',2000,'abc');-->
+<!--    let arrEmployee=[employee1,employee2,employee3];-->
+<!--    let data='<tr><th>STT</th><th>Họ và tên</th><th>Ngày sinh</th><th>Địa chỉ</th><th>Lương</th><th>Chức vụ</th></tr>';-->
+<!--   function showEmployee(){-->
+<!--        for (let i=0;i<arrEmployee.length;i++){-->
+<!--            data+='<tr>';-->
+<!--            data+=' <th>'+arrEmployee[i].STT+'</th>';-->
+<!--            data+=' <th>'+arrEmployee[i].name+'</th>';-->
+<!--            data+=' <th>'+arrEmployee[i].birth+'</th>';-->
+<!--            data+=' <th>'+arrEmployee[i].address+'</th>';-->
+<!--            data+=' <th>'+arrEmployee[i].salary+'</th>';-->
+<!--            data+=' <th>'+arrEmployee[i].position+'</th>';-->
+<!--            data+='</tr>';-->
+<!--        }-->
+<!--       tab.innerHTML= data;-->
+<!--    }-->
+<!--    showEmployee();-->
+<!--   function addEmployee(){-->
+<!--       let stt=prompt('nhập stt');-->
+<!--       let name1=prompt('nhập tên');-->
+<!--       let bỉthday=prompt('ngày sinh');-->
+<!--       let add=prompt('địa chỉ');-->
+<!--       let sala=prompt('lương');-->
+<!--       let posi=prompt('chức vụ');-->
+<!--       let employee4=new Employee(stt,name1,bỉthday,add,sala,posi);-->
+<!--       arrEmployee.push(employee4);-->
+<!--       data+=' <th>'+employee4.STT+'</th>';-->
+<!--       data+=' <th>'+employee4.name+'</th>';-->
+<!--       data+=' <th>'+employee4.birth+'</th>';-->
+<!--       data+=' <th>'+employee4.address+'</th>';-->
+<!--       data+=' <th>'+employee4.salary+'</th>';-->
+<!--       data+=' <th>'+employee4.position+'</th>';-->
+<!--   }-->
+<!--   let result= document.getElementById('button');-->
+<!--   result.onclick= function(){-->
+<!--       addEmployee();-->
+<!--       data="";-->
+<!--        showEmployee();-->
+<!--   }-->
+
+
+
+
+
+
+<!--    //console.log(arrEmployee);-->
+
+
+
+
+<!--    // tab.innerHTML=data;-->
+
+<!--    tab.innerHTML=data;-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->

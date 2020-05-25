@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đối xứng- đệ quy. Tường</title>
+</head>
+<body>
+<!--Hướng dẫn-->
+<!--Một chuỗi palindrome là một từ được đọc theo thứ tự xuôi, ngược đều giống nhau. -->
+<!--Ví dụ, rotor và redder là các chuỗi palindrome, nhưng motor thì không phải.-->
+<!--Kiểm tra một chuỗi là một palindrome được chia thành hai bài toán con-->
+<!--(1) Kiểm tra xem ký tự đầu tiên và ký tự cuối cùng của chuỗi có bằng nhau.-->
+<!--(2) Bỏ qua hai ký tự đầu và cuối, kiểm tra xem phần còn lại của chuỗi con là một palindrome.-->
+<!--Bài toán con thứ hai (2) giống như vấn đề ban đầu nhưng nhỏ hơn về kích thước.-->
+<script>
+let string = prompt("Input the string you want to check for symmetry below: ");
+function checkSymmetry(str) {
+    let first = 0;
+    let last = str.length-1;
+    if(first >= last){
+        return true;
+    }else if(str[first] !== str[last]){
+        return  false;
+    }else {
+        alert(str);
+        return checkSymmetry(str.slice(1,str.length-1));
+    }
+}
+if (checkSymmetry(string)){
+    alert("The string you just inputed is the symmetry string");
+}else {
+    alert("The string you just inputed is NOT the symmetry string");
+}
+
+</script>
+</body>
+</html>
