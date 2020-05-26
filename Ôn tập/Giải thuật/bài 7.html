@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 7</title>
 </head>
 <body>
-$END$
+
+BÀI 7:	Tính tổng và tích các chữ số của một số nguyên dương m cho trước
+(Ví dụ : m=234=> S=2+3+4=9, P=2*3*4=24)
+
+<script>
+    let str = prompt("nhập vào chuỗi số cần tính tổng và tích");
+    arr = str.split("");
+    alert(arr);
+    let tong = 0;
+    let tich = 1;
+    for(let i=0;i<arr.length;i++){
+        tong += parseInt(arr[i]);
+        tich *= parseInt(arr[i]);
+    }
+    document.write("Tổng là: " + tong + "; Tích là: " + tich);
+</script>
+
+
 </body>
 </html>

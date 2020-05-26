@@ -25,6 +25,7 @@
                 break;
             }
             case 4:{
+                deleteCustomer();
                 break;
             }
             case 5:{
@@ -35,13 +36,30 @@
             }
         }
     }
+    function deleteCustomer() {
+        let temp ="";
+        for(let i=0;i<arrListCustomer.length;i++){
+            temp += i + ".Name: " + arrListCustomer[i][0] + "\n";
+        }
+        let chooseDelete = parseInt(prompt("Chọn thứ tự khách hàng mà bạn muốn xóa."+"\n" +temp  ));
+        let check = parseInt(prompt("Do you want to delete this customer?"+"\n1.YES    2.NO"));
+        if(check ===1){
+        arrListCustomer.splice(chooseDelete,1);
+        }else {
+            alert("Cancel");
+        }
+        displayMainMenu();
+    }
+
     function editCustomer() {
         let temp ="";
         for(let i=0;i<arrListCustomer.length;i++){
             temp += i + ".Name: " + arrListCustomer[i][0] + "\n";
         }
-        let chooseDisplay = parseInt(prompt(temp + "\n" + "Chọn khách hàng muốn chỉnh sửa thông tin"));
-        let chooseEdit = parseInt(prompt("1.Tên: " + arrListCustomer[chooseDisplay][0] + "\n" +
+        let chooseDisplay = parseInt(prompt( "Chọn khách hàng muốn chỉnh sửa thông tin" + "\n"+temp ));
+        let chooseEdit = parseInt(prompt(
+            "Chọn thứ tự trường thông tin của khách hàng mà bạn muốn chỉnh sửa: " + "\n" +
+            "1.Tên: " + arrListCustomer[chooseDisplay][0] + "\n" +
             "2.cmnd: " + arrListCustomer[chooseDisplay][1] + "\n" +
             "3.Ngày sinh: " + arrListCustomer[chooseDisplay][2] + "\n" +
             "4.Email: " + arrListCustomer[chooseDisplay][3] + "\n" +
@@ -51,8 +69,8 @@
             "8.Loại khách hàng: " + arrListCustomer[chooseDisplay][7] + "\n" +
             "9.Giảm giá: " + arrListCustomer[chooseDisplay][8] + "\n" +
             "10.Số lượng đi kèm: " + arrListCustomer[chooseDisplay][9] + "\n" +
-            "11.Số lượng ngày: " + arrListCustomer[chooseDisplay][10] + "\n" +
-        "Chọn thứ tự trường thông tin của khách hàng mà bạn muốn chỉnh sửa: "));
+            "11.Số lượng ngày: " + arrListCustomer[chooseDisplay][10] + "\n"
+        ));
         switch (chooseEdit) {
             case 1:{
                 arrListCustomer[chooseDisplay][0]=prompt("Input name");
